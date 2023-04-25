@@ -17,3 +17,16 @@ export enum WeatherSummary {
     'Rain',
     "Snow",
 }
+
+export interface WeatherResponse {
+    date: string
+    temperature: number
+    feelsLikeTemperature: number
+    windInfo: WindInfo
+    summary: 0 | 1 | 2 | 3 | 4 | 5
+}
+
+export interface WindInfo {
+    speed: number
+    direction: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+}
